@@ -13,6 +13,6 @@ Os grupos ocorrem nas terças-feira de forma quinzenal a partir das 15h.
 * 🐘 [PHP - Uma Introdução à Linguagem](https://www.alura.com.br/artigos/php-uma-introducao-linguagem)
 * 🐘 [PHP: da instalação ao primeiro código](https://www.alura.com.br/artigos/php-instalacao-primeiro-codigo)
 * 🐘 [Trabalhando com arrays em PHP](https://www.alura.com.br/artigos/trabalhando-com-arrays-em-php)
-* 🐘 [PHP: validação de Dados Nacionais (BR)](https://www.alura.com.br/artigos/php-uma-introducao-linguagem)
+* 🐘 [PHP: validação de Dados Nacionais (BR)](https://www.alura.com.br/artigos/php-validacao-dados-nacionais-br)
 
 
