@@ -1,4 +1,21 @@
 <?php
-$page = ($_GET['page']??'login').'.view';
-$content = file_get_contents(VIEW_FOLDER.$page);
-echo $content;
+
+require_once 'controller.php';
+require_once 'view.php';
+
+$route = $_GET['page'] ?? 'login';
+
+switch ($route){
+    case 'register':
+        do_register();
+        break;
+    case 'login':
+        do_login();
+        break;
+    default:
+        do_not_found();
+        break;
+}
+
+
+
