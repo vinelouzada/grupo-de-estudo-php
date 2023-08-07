@@ -2,6 +2,7 @@
 
 require_once 'controller.php';
 require_once 'view.php';
+require_once 'crud.php';
 
 $route = $_GET['page'] ?? 'login';
 

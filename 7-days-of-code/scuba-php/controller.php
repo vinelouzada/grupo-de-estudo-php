@@ -3,6 +3,13 @@
 
 function do_register()
 {
+    if (isset($_POST['person'])){
+        crud_create($_POST['person']);
+        header("Location: /?page=login");
+        exit();
+    }
+
+
     render_view('register');
 }
 
