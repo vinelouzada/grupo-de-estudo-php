@@ -17,16 +17,16 @@
         </div>
         <label for="nome">Nome</label>
         <input type="text" name="person[name]" required>
-        <span class="mensagem-erro">Mensagem de Erro</span>
+        <span class="mensagem-erro">{{$nome}}</span>
         <label for="email">E-mail</label>
         <input type="email" name="person[email]" required>
-        <span class="mensagem-erro">Mensagem de Erro</span>
+        <span class="mensagem-erro">{{$email}}</span>
         <label for="senha">Senha</label>
         <input type="password" name="person[password]" required>
-        <span class="mensagem-erro">Mensagem de Erro</span>
+        <span class="mensagem-erro">{{$senha}}</span>
         <label for="repita-senha">Repita Senha</label>
         <input type="password" name="person[password-confirm]" required>
-        <span class="mensagem-erro">Mensagem de Erro</span>
+        <span class="mensagem-erro">{{$confirmarSenha}}</span>
         <input type="submit" value="Salvar">
 
     </form>

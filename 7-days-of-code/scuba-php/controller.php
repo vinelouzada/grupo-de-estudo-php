@@ -4,12 +4,28 @@
 function do_register()
 {
     if (isset($_POST['person'])){
-        crud_create($_POST['person']);
-        header("Location: /?page=login");
+        do_register_post();
+    }else{
+        do_register_get();
+    }
+
+}
+
+function do_register_post()
+{
+    $erros = validator_cadastro($_POST['person']);
+
+    if (!empty($erros)){
+        render_view('register', $erros);
         exit();
     }
 
+    crud_create($_POST['person']);
+    header("Location: /?page=login");
+}
 
+function do_register_get()
+{
     render_view('register');
 }
 
