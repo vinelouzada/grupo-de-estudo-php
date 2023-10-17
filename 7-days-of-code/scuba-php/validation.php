@@ -1,6 +1,6 @@
 <?php
 
-function validator_cadastro(array $dadosDoFormulario): array
+function validator_cadastro(array $dadosDoFormulario)
 {
 
    if(mb_strlen($dadosDoFormulario["password"]) < 10){

@@ -20,7 +20,9 @@ function do_register_post()
         exit();
     }
 
+    $_POST['person']['mail_validation'] = false;
     crud_create($_POST['person']);
+    enviarEmail($_POST['person']);
     header("Location: /?page=login");
 }
 
